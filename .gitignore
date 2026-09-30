@@ -21,3 +21,19 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# ARC-Bench local credentials and generated artifacts
+api.txt
+*.key
+*.pem
+.env
+.env.*
+*.zip
+*.log
+__pycache__/
+*.pyc
+node_modules/
+arc/arc-output/
+arc/local-grader/
+arc/.octos-acceptance/
+target/

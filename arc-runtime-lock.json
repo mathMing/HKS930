@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "runtime_release_verified",
+  "repository": "octos-org/octos-arc",
+  "upstream": {
+    "repository": "octos-org/octos",
+    "commit": "8558a3bff41f43838130808a1fa6cf0299e0bc40",
+    "tag": "arc-base-20260910",
+    "cargo_lock_sha256": "9761e8904a0949aa0cff189cdd75b6a5f0b00daf7c968a883cdf39786bbd3088"
+  },
+  "legacy": {
+    "repository": "octos-org/arc-adapter",
+    "commit": "b0999c95f7875c8d4ff3e58e733fb2c5abc8caf7",
+    "branch": "legacy",
+    "tag": "legacy-adapter-20260910",
+    "original_bundle_sha256": "1914ace16d50de61f3d7e9d3838c439f65bbfd64e7c0493992de198528f54a5e"
+  },
+  "runtime_release": {
+    "version": "v2.0.3-rc.11-arc.17",
+    "source_commit": "abbd8dae803812c4c6a4f7dc8d840f9a47930222",
+    "target": "x86_64-unknown-linux-gnu",
+    "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18)",
+    "archive": "octos-bundle-x86_64-unknown-linux-gnu.tar.gz",
+    "archive_sha256": "935557676805e1b652c70c884da493612b45f0bcba06bb2b0e73c3092b819c2c",
+    "binary": "octos",
+    "binary_version": "octos 2.0.3-rc.11 (abbd8dae 2026-09-23)",
+    "binary_sha256": "86c8bd509e2c566ae9b37c54f60911c3e4f1d5a1429aff2419e03b0b843b4578",
+    "url": "https://github.com/octos-org/octos-arc/releases/download/v2.0.3-rc.11-arc.17/octos-bundle-x86_64-unknown-linux-gnu.tar.gz"
+  },
+  "build": {
+    "source_commit": "08e10c058ff8d6248d8cfaa91309ec6d430d4ae1",
+    "target": "aarch64-apple-darwin",
+    "rustc": "rustc 1.98.0 (88d9e12ae 2026-08-18) (Homebrew)",
+    "command": "cargo build --locked -p octos-cli --no-default-features --features api",
+    "binary": "target/release/octos",
+    "binary_sha256": "a856afaf88c1967ad95ec2268259665085aa9a9ef6adb27aef0c29a6558488b1"
+  },
+  "model_configuration": null,
+  "arc_submission": null,
+  "policy": {
+    "allow_latest": false,
+    "allow_unverified_binary": false,
+    "require_binary_sha256": true,
+    "require_archive_sha256": true,
+    "require_exact_source_commit": true,
+    "allow_runtime_fallback": false
+  }
+}
